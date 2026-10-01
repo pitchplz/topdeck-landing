@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Topdeck</title>
+<meta name="description" content="Topdeck åpner snart i Hausmanns gate 19 B, Oslo.">
+<meta name="theme-color" content="#01030f">
+<meta property="og:title" content="Topdeck">
+<meta property="og:description" content="Åpner snart.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://topdeck.no/">
+<meta property="og:image" content="https://topdeck.no/logo.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #01030f;       /* bakgrunnen i logoen */
+    --white: #f6fafc;    /* bokstavene */
+    --red: #e0202b;      /* skyggen */
+    --blue: #2f7bea;     /* omrisset */
+    --gold: #f6bd3a;     /* kronen */
+    --ice: #a9c4e6;      /* dempet is-blå til brødtekst */
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ice);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: clamp(20px, 4vh, 40px);
+    padding: max(24px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(32px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  }
+  .logo {
+    display: block;
+    width: min(78vw, 560px);
+    max-height: 52vh;
+    height: auto;
+    object-fit: contain;
+  }
+  h1 {
+    margin: 0;
+    color: var(--white);
+    font-family: "Arial Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: clamp(30px, 7vw, 54px);
+    line-height: 1.05;
+    letter-spacing: 0.01em;
+    text-shadow: 0.06em 0.06em 0 var(--red);
+  }
+  address {
+    font-style: normal;
+    font-size: clamp(15px, 2.4vw, 18px);
+    line-height: 1.6;
+    font-variant-numeric: tabular-nums;
+  }
+  a {
+    color: var(--gold);
+    font-size: clamp(16px, 2.6vw, 20px);
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 2px;
+  }
+  a:hover, a:focus-visible { color: var(--white); border-bottom-color: var(--gold); outline: none; }
+</style>
+</head>
+<body>
+<main>
+  <picture>
+    <source srcset="logo.webp" type="image/webp">
+    <img class="logo" src="logo.png" alt="Topdeck" width="1200" height="831">
+  </picture>
+  <h1>Åpner snart.</h1>
+  <address>
+    Org nr. 937 937 555<br>
+    Hausmanns gate 19 B,<br>
+    0182 OSLO
+  </address>
+  <a href="mailto:hei@topdeck.no">hei@topdeck.no</a>
+</main>
+</body>
+</html>
