@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
 <title>Topdeck</title>
 <meta name="description" content="Topdeck åpner snart i Hausmanns gate 19 B, Oslo.">
 <meta name="theme-color" content="#01030f">
@@ -74,6 +75,14 @@
     padding-bottom: 2px;
   }
   a:hover, a:focus-visible { color: var(--white); border-bottom-color: var(--gold); outline: none; }
+  /* org.nr. skal forbli tekst, også der telefonen gjør tall om til lenker */
+  address a, a[href^="tel:"], a[x-apple-data-detectors] {
+    color: inherit;
+    font: inherit;
+    border: 0;
+    padding: 0;
+    pointer-events: none;
+  }
 </style>
 </head>
 <body>
